@@ -1,3 +1,6 @@
-Script to configure Ubuntu Gnome operating system as work environment
+I use this script to configure Ubuntu Gnome as work environment
 
-Usage: sudo ./bin/configure-all
+Usage:
+
+  $ sudo make
+

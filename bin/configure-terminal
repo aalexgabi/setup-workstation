@@ -3,12 +3,7 @@
 # Stop on error
 set -e
 
-if [ $# -eq 0 ]; then
-    echo 'fatal: Username not provided as first argument'
-    exit 1
-fi
-
-USER=$1
+USER=$(who am i | awk '{print $1}')
 BASEDIR=$(dirname $(realpath $0))/..
 
 # Ensure terminator configuration directory exists
