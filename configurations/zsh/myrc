@@ -1,0 +1,5 @@
+export LC_COLLATE="C"
+alias ll="ls -plha --group-directories-first --color"
+bindkey ';5D' emacs-backward-word
+bindkey ';5C' emacs-forward-word
+prompt off

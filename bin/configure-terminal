@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+if [ $# -eq 0 ]; then
+    echo 'fatal: Username not provided as first argument'
+    exit 1
+fi
+
+USER=$1
+BASEDIR=$(dirname $(realpath $0))/..
+
+# Ensure terminator configuration directory exists
+mkdir -p ~/.config/terminator
+# Copy terminator configuration
+cp $BASEDIR/configurations/terminator/config ~/.config/terminator/config
+
+# Copy myrc
+cp $BASEDIR/configurations/zsh/myrc ~/.myrc
+# Copy zshrc
+cp $BASEDIR/configurations/zsh/zshrc ~/.zshrc
+# Change shell
+chsh -s /bin/zsh $USER

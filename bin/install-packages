@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Update apt-get index
+apt-get update
+# Install packages
+apt-get install -y\
+ gdebi\
+ git\
+ gitg\
+ meld\
+ terminator\
+ tig\
+ zsh\
+ --no-install-recommends

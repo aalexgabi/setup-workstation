@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+if [ $# -eq 0 ]; then
+    echo 'fatal: Username not provided as first argument'
+    exit 1
+fi
+
+BASEDIR=$(dirname $(realpath $0))/..
+USER=$1
+
+echo 'Configuring Apple keyboard...'
+$BASEDIR/bin/configure-apple-keyboard
+echo 'Installing system packages...'
+$BASEDIR/bin/install-packages
+echo 'Configuring terminal...'
+$BASEDIR/bin/configure-terminal $USER
