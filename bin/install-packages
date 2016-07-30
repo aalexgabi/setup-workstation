@@ -10,6 +10,7 @@ apt-get install -y\
  gdebi\
  git\
  gitg\
+ htop\
  meld\
  terminator\
  tig\
