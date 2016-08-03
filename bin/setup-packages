@@ -4,9 +4,9 @@
 set -e
 
 # Update apt-get index
-apt-get update
+sudo apt-get update
 # Install packages
-apt-get install -y\
+sudo apt-get install -y\
  gdebi\
  git\
  gitg\
