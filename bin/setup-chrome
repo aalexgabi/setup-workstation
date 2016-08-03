@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Check if already installed
+command -v google-chrome &> /dev/null || INSTALL=1
+if [ $INSTALL ]; then
+  # Download Chrome deb file
+  wget -P /tmp https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  # Install package
+  gdebi --n /tmp/google-chrome-stable_current_amd64.deb
+fi

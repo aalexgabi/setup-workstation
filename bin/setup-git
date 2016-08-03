@@ -3,7 +3,7 @@
 # Stop on error
 set -e
 
-# Calculate project root directory
+# Get project root directory
 BASEDIR=$(dirname $(realpath $0))/..
 
 # Copy Git configuration file

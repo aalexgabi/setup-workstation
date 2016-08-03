@@ -12,6 +12,7 @@ apt-get install -y\
  gitg\
  htop\
  meld\
+ ngrep\
  terminator\
  tig\
  zsh\

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Get project root directory
+BASEDIR=$(dirname $(realpath $0))/..
+
+# Copy myrc
+cp $BASEDIR/configurations/zsh/myrc ~/.myrc
+# Copy zshrc
+cp $BASEDIR/configurations/zsh/zshrc ~/.zshrc
+# Change shell
+chsh -s /bin/zsh $SUDO_USER

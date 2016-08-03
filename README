@@ -2,5 +2,4 @@ I use this script to configure Ubuntu Gnome as work environment
 
 Usage:
 
-  $ sudo make
-
+  $ make

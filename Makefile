@@ -1,2 +1,2 @@
 all:
-	./bin/configure-all
+	./bin/setup-all

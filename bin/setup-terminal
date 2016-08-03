@@ -3,17 +3,10 @@
 # Stop on error
 set -e
 
-USER=$(who am i | awk '{print $1}')
+# Get project root directory
 BASEDIR=$(dirname $(realpath $0))/..
 
 # Ensure terminator configuration directory exists
 mkdir -p ~/.config/terminator
 # Copy terminator configuration
 cp $BASEDIR/configurations/terminator/config ~/.config/terminator/config
-
-# Copy myrc
-cp $BASEDIR/configurations/zsh/myrc ~/.myrc
-# Copy zshrc
-cp $BASEDIR/configurations/zsh/zshrc ~/.zshrc
-# Change shell
-chsh -s /bin/zsh $USER

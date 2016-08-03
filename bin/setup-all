@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Get project root directory
+BASEDIR=$(dirname $(realpath $0))/..
+
+if [[ $(id -u) -ne 0 ]] ; then
+  sudo $BASEDIR/bin/setup-all
+  exit $?
+fi
+
+echo 'Setting up Apple keyboard...'
+$BASEDIR/bin/setup-apple-keyboard
+
+echo 'Installing system packages...'
+$BASEDIR/bin/setup-packages
+echo 'Setting up fonts...'
+$BASEDIR/bin/setup-fonts
+
+echo 'Setting up Chrome...'
+$BASEDIR/bin/setup-chrome
+echo 'Setting up Code...'
+$BASEDIR/bin/setup-code
+echo 'Setting up Git...'
+$BASEDIR/bin/setup-git
+echo 'Setting up Terminator...'
+$BASEDIR/bin/setup-terminal
+echo 'Setting up Zsh...'
+$BASEDIR/bin/setup-zsh
