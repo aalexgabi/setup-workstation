@@ -18,6 +18,8 @@ echo 'Installing system packages...'
 $BASEDIR/bin/setup-packages
 echo 'Setting up fonts...'
 $BASEDIR/bin/setup-fonts
+echo 'Setting up clock...'
+$BASEDIR/bin/setup-clock
 
 echo 'Setting up Chrome...'
 $BASEDIR/bin/setup-chrome

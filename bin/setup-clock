@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Activate automatic time
+timedatectl set-ntp 1
+# Activate automatic time zone
+gsettings set org.gnome.desktop.datetime automatic-timezone true
+
+# Show seconds in clock
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+# Show date in clock
+gsettings set org.gnome.desktop.interface clock-show-date true
