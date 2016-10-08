@@ -27,6 +27,8 @@ echo 'Setting up Code...'
 $BASEDIR/bin/setup-code
 echo 'Setting up Git...'
 $BASEDIR/bin/setup-git
+echo 'Setting up Spotify...'
+$BASEDIR/bin/setup-spotify
 echo 'Setting up Terminator...'
 $BASEDIR/bin/setup-terminal
 echo 'Setting up Zsh...'
