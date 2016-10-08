@@ -25,6 +25,8 @@ echo 'Setting up Chrome...'
 $BASEDIR/bin/setup-chrome
 echo 'Setting up Code...'
 $BASEDIR/bin/setup-code
+echo 'Setting up Gnome extensions...'
+$BASEDIR/bin/setup-gnome-extensions
 echo 'Setting up Git...'
 $BASEDIR/bin/setup-git
 echo 'Setting up Spotify...'

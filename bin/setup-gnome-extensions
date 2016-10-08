@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Disable extension if already enabled; don't stop if already disabled
+gnome-shell-extension-tool -d alternate-tab@gnome-shell-extensions.gcampax.github.com || true
+gnome-shell-extension-tool -d window-list@gnome-shell-extensions.gcampax.github.com || true
+gnome-shell-extension-tool -d places-menu@gnome-shell-extensions.gcampax.github.com || true
+
+# Install extensions
+gnome-shell-extension-tool -e alternate-tab@gnome-shell-extensions.gcampax.github.com
+gnome-shell-extension-tool -e window-list@gnome-shell-extensions.gcampax.github.com
+gnome-shell-extension-tool -e places-menu@gnome-shell-extensions.gcampax.github.com
