@@ -11,9 +11,11 @@ sudo apt-get install -y\
  gdebi\
  git\
  gitg\
+ gparted\
  htop\
  meld\
  ngrep\
+ synaptic\
  terminator\
  tig\
  zsh\
