@@ -20,6 +20,7 @@ sudo apt-get install -y\
  synaptic\
  terminator\
  tig\
+ trash-cli\
  vlc\
  zsh\
  --no-install-recommends
