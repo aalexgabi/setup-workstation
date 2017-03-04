@@ -1,0 +1,19 @@
+#!/bin/bash
+
+##
+# Sign message using HMAC-SHA1
+##
+
+# Stop on error
+set -e
+
+# Prompt for key
+echo Enter key
+read -s KEY
+
+# Prompt for message
+echo Enter message
+read -s MSG
+
+# Generate and copy signature to secondary clipboard
+echo -n "$MSG" | openssl sha1 -hmac "$KEY" | grep -Po '\w+$' | xclip
