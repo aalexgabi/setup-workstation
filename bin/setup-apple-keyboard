@@ -4,8 +4,10 @@
 set -e
 
 # Function keys are used as first key. Pressing 'F8' key will behave like a F8. Pressing 'fn'+'F8' will act as special key (play/pause)
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
 echo options hid_apple fnmode=2 | sudo tee /etc/modprobe.d/hid_apple.conf
 # Swap the Alt key and Command key
+echo 1 | sudo tee /sys/module/hid_apple/parameters/swap_opt_cmd
 echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
 # Trigger copying the configuration into the initramfs bootfile
 sudo update-initramfs -u -k all
