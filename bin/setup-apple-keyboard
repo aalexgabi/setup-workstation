@@ -9,5 +9,5 @@ echo options hid_apple fnmode=2 | sudo tee /etc/modprobe.d/hid_apple.conf
 # Swap the Alt key and Command key
 echo 1 | sudo tee /sys/module/hid_apple/parameters/swap_opt_cmd
 echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
-# Trigger copying the configuration into the initramfs bootfile
-sudo update-initramfs -u -k all
+# Trigger copying the configuration into the initramfs bootfile (ubuntu or arch)
+sudo update-initramfs -u -k all || sudo mkinitcpio -P
