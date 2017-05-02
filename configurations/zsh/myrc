@@ -1,7 +1,9 @@
 # Zsh configuration
 export LC_COLLATE="C"
-bindkey ';5D' emacs-backward-word
-bindkey ';5C' emacs-forward-word
+bindkey ";5D" emacs-backward-word
+bindkey ";5C" emacs-forward-word
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 prompt off
 
 # General aliases
