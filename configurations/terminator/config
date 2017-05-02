@@ -42,4 +42,5 @@
     icon_bell = False
     scrollback_infinite = True
     scrollback_lines = 1000
+    scrollbar_position = hidden
     use_system_font = False
