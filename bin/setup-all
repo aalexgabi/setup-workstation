@@ -16,8 +16,6 @@ $BASEDIR/bin/setup-apple-keyboard
 
 echo 'Installing system packages...'
 $BASEDIR/bin/setup-packages
-echo 'Setting up fonts...'
-$BASEDIR/bin/setup-fonts
 echo 'Setting up clock...'
 $BASEDIR/bin/setup-clock
 
