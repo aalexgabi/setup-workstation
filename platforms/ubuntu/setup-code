@@ -4,7 +4,7 @@
 set -e
 
 # Get project root directory
-BASEDIR=$(dirname $(realpath $0))/..
+BASEDIR=$(dirname $(realpath $0))/../..
 
 # Check if already installed
 command -v code &> /dev/null || INSTALL=1
