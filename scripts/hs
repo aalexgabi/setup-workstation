@@ -16,4 +16,4 @@ echo Enter message
 read -s MSG
 
 # Generate and copy signature to secondary clipboard
-echo -n "$MSG" | openssl sha1 -hmac "$KEY" | grep -Po '\w+$' | xclip
+echo -n "$MSG" | openssl sha1 -hmac "$KEY" | grep -Po '\w+$' | tr -d '\n' | xclip
