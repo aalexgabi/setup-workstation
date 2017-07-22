@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Get project root directory
+BASEDIR=$(dirname $(realpath $0))/..
+
+# Copy Git configuration file
+cp -r $BASEDIR/configurations/micro ~/.config/micro

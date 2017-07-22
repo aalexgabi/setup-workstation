@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+sudo yaourt -S\
+ micro\
+ spotify\
+ terminator\
+ virtualbox\
+ visual-studio-code\
+ zsh
+

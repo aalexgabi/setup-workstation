@@ -1,0 +1,12 @@
+{
+    "CtrlShiftRight":  "SelectWordRight",
+    "CtrlShiftLeft":   "SelectWordLeft",
+    "CtrlShiftZ": "Redo",
+    "CtrlLeft": "WordLeft",
+    "CtrlRight": "WordRight",
+    "CtrlW": "Quit",
+    "CtrlUp": "MoveLinesUp",
+    "CtrlDown": "MoveLinesDown",
+    "CtrlShiftDown": "NextSplit",
+    "CtrlShiftUp": "PreviousSplit",
+}
