@@ -3,11 +3,13 @@
 # Stop on error
 set -e
 
-sudo yaourt -S\
- micro\
- spotify\
+sudo pacman -S\
  terminator\
  virtualbox\
- visual-studio-code\
  zsh
+
+yaourt -S\
+ micro\
+ spotify\
+ visual-studio-code
 
