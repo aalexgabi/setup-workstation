@@ -11,6 +11,6 @@ alias ll="ls -plha --group-directories-first --color"
 
 # Git aliases
 alias s='git status -s'
-alias f='git fetch'
+alias f='git fetch --prune'
 alias fr='git fetch && git rebase'
 alias b='git branch'
