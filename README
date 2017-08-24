@@ -1,5 +1,8 @@
-I use this script to configure Ubuntu Gnome as work environment
+I use these scripts to configure my workstation
 
 Usage:
 
-  $ make
+  $ cd platforms/<platform-name>
+  $ # Run what you need from here
+  $ cd - && cd bin
+  $ # Run what you need from here
