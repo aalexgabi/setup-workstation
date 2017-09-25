@@ -6,11 +6,17 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 prompt off
 
+# Set up editor
+VISUAL=micro
+EDITOR=micro
+
 # General aliases
 alias ll="ls -plha --group-directories-first --color"
 
 # Git aliases
 alias s='git status -s'
 alias f='git fetch --prune'
-alias fr='git fetch && git rebase'
+alias fr='f && git rebase'
 alias b='git branch'
+alias t='git tag | sort -V'
+alias lt='git tag | sort -V | grep -P '\''^[v]?\d+\.\d+\.\d+$'\'' | tail -n 1'
