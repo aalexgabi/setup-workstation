@@ -7,6 +7,7 @@ sudo pacman -S\
  terminator\
  tree\
  virtualbox\
+ wget\
  zsh
 
 yaourt -S\
