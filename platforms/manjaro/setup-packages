@@ -3,12 +3,24 @@
 # Stop on error
 set -e
 
-sudo pacman -Sy\
+sudo pacman --needed -Sy\
+ curl\
+ git\
+ gitg\
+ htop\
+ meld\
+ ngrep\
  nmap\
+ nodejs\
+ npm\
  terminator\
+ tig\
+ trash-cli\
  tree\
  virtualbox\
+ vlc\
  wget\
+ xclip\
  zsh
 
 yaourt -S\
