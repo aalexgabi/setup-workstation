@@ -3,7 +3,8 @@
 # Stop on error
 set -e
 
-sudo pacman -S\
+sudo pacman -Sy\
+ nmap\
  terminator\
  tree\
  virtualbox\
@@ -14,4 +15,3 @@ yaourt -S\
  micro\
  spotify\
  visual-studio-code
-
