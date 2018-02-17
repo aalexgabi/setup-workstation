@@ -7,8 +7,8 @@ bindkey "^[[F" end-of-line
 prompt off
 
 # Set up editor
-VISUAL=micro
-EDITOR=micro
+export VISUAL=micro
+export EDITOR=micro
 
 # General aliases
 alias ll="ls -plha --group-directories-first --color"
@@ -22,3 +22,6 @@ alias fr='f && git rebase'
 alias b='git branch'
 alias t='git tag | sort -V'
 alias lt='git tag | sort -V | grep -P '\''^[v]?\d+\.\d+\.\d+$'\'' | tail -n 1'
+
+# Postgres
+export PGUSER=postgres
