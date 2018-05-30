@@ -10,6 +10,9 @@ prompt off
 export VISUAL=micro
 export EDITOR=micro
 
+# History size
+export HISTSIZE=10000
+
 # General aliases
 alias ll="ls -plha --group-directories-first --color"
 
