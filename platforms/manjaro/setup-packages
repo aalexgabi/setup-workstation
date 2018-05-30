@@ -5,6 +5,7 @@ set -e
 
 sudo pacman --needed -Sy\
  curl\
+ diff-so-fancy\
  git\
  gitg\
  htop\
