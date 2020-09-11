@@ -4,12 +4,14 @@
 set -e
 
 sudo pacman --needed -Sy\
+ code\
  curl\
  diff-so-fancy\
  git\
  gitg\
  htop\
  meld\
+ micro-manjaro\
  ngrep\
  nmap\
  nodejs\
@@ -18,13 +20,7 @@ sudo pacman --needed -Sy\
  tig\
  trash-cli\
  tree\
- virtualbox\
- vlc\
+ smplayer\
  wget\
  xclip\
  zsh
-
-yaourt -S\
- micro\
- spotify\
- visual-studio-code
