@@ -1,5 +1,7 @@
-// Place your settings in this file to overwrite the default settings
 {
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.scrollback": 100000,
+    "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Droid Sans Mono'",
     "editor.fontSize": 15,
     "editor.wordWrap": "off"
