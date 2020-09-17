@@ -4,5 +4,8 @@
     "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Droid Sans Mono'",
     "editor.fontSize": 15,
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }

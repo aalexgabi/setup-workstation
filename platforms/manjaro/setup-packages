@@ -16,6 +16,7 @@ sudo pacman --needed -Sy\
  nmap\
  nodejs\
  npm\
+ p4v\
  terminator\
  tig\
  trash-cli\
