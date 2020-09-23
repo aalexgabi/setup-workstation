@@ -5,6 +5,10 @@
     "editor.fontFamily": "'Droid Sans Mono'",
     "editor.fontSize": 15,
     "editor.wordWrap": "off",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "eslint.workingDirectories": [{ "mode": "auto" }],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     }
