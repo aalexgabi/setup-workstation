@@ -1,9 +1,19 @@
 # Zsh configuration
+
 export LC_COLLATE="C"
-bindkey ";5D" emacs-backward-word
-bindkey ";5C" emacs-forward-word
+
+# Terminator
+bindkey "^[[1;5D" emacs-backward-word
+bindkey "^[[1;5C" emacs-forward-word
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
+
+# Dolphin terminal
+#bindkey "^[[D" emacs-backward-word
+#bindkey "^[[C" emacs-forward-word
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
+
 prompt off
 
 # Set up editor
