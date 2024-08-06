@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Stop on error
+set -e
+
+# Get project root directory
+BASEDIR=$(dirname $(realpath $0))/..
+
+# Ensure directory is present
+mkdir -p ~/.config/Code\ -\ OSS/User
+
+# Copy hs
+cp $BASEDIR/configurations/code/settings.json ~/.config/Code\ -\ OSS/User/settings.json
