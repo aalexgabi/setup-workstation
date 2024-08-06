@@ -10,5 +10,6 @@
     "git.suggestSmartCommit": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
-    }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }
