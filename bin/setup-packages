@@ -16,6 +16,7 @@ sudo pacman --needed -Sy\
  ngrep\
  nmap\
  nvm\
+ rclone\
  terminator\
  tig\
  trash-cli\
