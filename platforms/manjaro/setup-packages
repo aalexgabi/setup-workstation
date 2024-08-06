@@ -4,6 +4,7 @@
 set -e
 
 sudo pacman --needed -Sy\
+ brave-browser\
  code\
  curl\
  diff-so-fancy\
@@ -14,9 +15,7 @@ sudo pacman --needed -Sy\
  micro-manjaro\
  ngrep\
  nmap\
- nodejs\
- npm\
- p4v\
+ nvm\
  terminator\
  tig\
  trash-cli\
