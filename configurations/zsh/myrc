@@ -35,6 +35,7 @@ alias fr='f && git rebase'
 alias b='git branch'
 alias t='git tag | sort -V'
 alias lt='git tag | sort -V | grep -P '\''^[v]?\d+\.\d+\.\d+$'\'' | tail -n 1'
+alias git-clean-merged='git branch --merged master | grep -v "^\* master$" | xargs -r -n 1 git branch -d'
 
 # Postgres
 export PGUSER=postgres
