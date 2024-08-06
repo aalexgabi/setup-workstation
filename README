@@ -2,7 +2,5 @@ I use these scripts to configure my workstation
 
 Usage:
 
-  $ cd platforms/<platform-name>
-  $ # Run what you need from here
-  $ cd - && cd bin
+  $ cd bin
   $ # Run what you need from here
