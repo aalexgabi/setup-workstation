@@ -7,7 +7,7 @@ set -e
 BASEDIR=$(dirname $(realpath $0))/..
 
 # Ensure directory is present
-mkdir -p ~/.config/Code\ -\ OSS/User
+mkdir -p ~/.config/Code/User
 
 # Copy hs
-cp $BASEDIR/configurations/code/settings.json ~/.config/Code\ -\ OSS/User/settings.json
+cp $BASEDIR/configurations/code/settings.json ~/.config/Code/User/settings.json
