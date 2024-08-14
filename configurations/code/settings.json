@@ -1,4 +1,6 @@
 {
+    "editor.snippetSuggestions": "top",
+    "git.confirmSync": false,
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.scrollback": 100000,
     "window.menuBarVisibility": "toggle",
@@ -6,7 +8,6 @@
     "editor.fontSize": 15,
     "editor.wordWrap": "off",
     "git.autofetch": true,
-    "git.confirmSync": false,
     "git.suggestSmartCommit": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
