@@ -16,3 +16,22 @@
 	keepBackup = false
 [rerere]
 	enabled = true
+[alias]
+    wip = "!sh -c 'git stash push -m \"$(git branch --show-current):wip-$(date +%s)\"'"
+    unwip = "!f() { \
+        stash=$(git stash list | grep \"$(git branch --show-current):\" | head -n 1 | cut -d: -f1); \
+        if [ -n \"$stash\" ]; then \
+            git stash pop $stash; \
+        else \
+            echo 'No matching stash found for this branch.'; \
+        fi; \
+    }; f"
+    wip-list = "!git stash list | grep \"$(git branch --show-current):\""
+    wip-drop = "!f() { \
+        stash=$(git stash list | grep \"$(git branch --show-current):\" | head -n 1 | cut -d: -f1); \
+        if [ -n \"$stash\" ]; then \
+            git stash drop $stash; \
+        else \
+            echo 'No matching stash found for this branch.'; \
+        fi; \
+    }; f"
