@@ -8,6 +8,7 @@ sudo pacman --needed -Sy\
  code\
  curl\
  diff-so-fancy\
+ direnv\
  git\
  gitg\
  htop\

@@ -28,14 +28,22 @@ alias ll="ls -plha --group-directories-first --color"
 
 # Git aliases
 alias c='git checkout'
-alias cm='git checkout master'
+alias cm='git checkout main'
 alias s='git status -s'
 alias f='git fetch --prune'
 alias fr='f && git rebase'
 alias b='git branch'
 alias t='git tag | sort -V'
 alias lt='git tag | sort -V | grep -P '\''^[v]?\d+\.\d+\.\d+$'\'' | tail -n 1'
-alias git-clean-merged='git branch --merged master | grep -v "^\* master$" | xargs -r -n 1 git branch -d'
+alias pm='git pull origin main'
+alias git-clean-merged='git branch --merged main | grep -v "^\* main$" | xargs -r -n 1 git branch -d'
+alias git-clean-gone="git branch -vv | grep ': gone]' | awk '{print \$1}' | xargs -r git branch -D"
+
+# Direnv
+eval "$(direnv hook zsh)"
+
+# Path
+export PATH="$HOME/.local/bin:$PATH"
 
 # Postgres
 export PGUSER=postgres
