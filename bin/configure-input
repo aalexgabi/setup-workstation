@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Keyboard - NumLock on startup
+kwriteconfig5 --file kcminputrc --group Keyboard --key NumLock 0
+
+# Mouse - disable acceleration
+kwriteconfig5 --file kcminputrc --group Mouse --key X11LibInputXAccelProfileFlat true
+
+# Touchpad - enable with natural scroll
+read VENDOR PRODUCT NAME < <(libinput list-devices 2>/dev/null | awk '
+  /Device:/ { name=substr($0, index($0,$2)) }
+  /Vendor:/ { vendor=$2 } /Product:/ { product=$2 }
+  /Touchpad/ { found=1 }
+  found && /Kernel:/ { print vendor, product, name; exit }
+')
+
+[ -n "$NAME" ] && {
+  kwriteconfig5 --file kcminputrc --group "Libinput][${VENDOR}][${PRODUCT}][${NAME}" --key Enabled true
+  kwriteconfig5 --file kcminputrc --group "Libinput][${VENDOR}][${PRODUCT}][${NAME}" --key NaturalScroll true
+}
+
+# Restart KDE input daemon to apply changes
+kquitapp5 kded5 && kded5 &
