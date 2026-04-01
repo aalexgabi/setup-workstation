@@ -8,7 +8,7 @@
   title_inactive_fg_color = "#ffffff"
   title_transmit_bg_color = "#c0bebf"
   title_transmit_fg_color = "#000000"
-  window_state = maximise
+  window_state = normal
 [keybindings]
 [layouts]
   [[default]]
@@ -16,7 +16,7 @@
       fullscreen = False
       last_active_term = a9b588eb-66f3-48ab-800f-13caa95daba7
       last_active_window = True
-      maximised = True
+      maximised = False
       order = 0
       parent = ""
       position = 0:27
