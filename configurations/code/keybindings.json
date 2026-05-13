@@ -20,5 +20,13 @@
         "key": "ctrl+v",
         "command": "workbench.action.terminal.paste",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
     }
 ]
