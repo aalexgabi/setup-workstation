@@ -1,7 +1,7 @@
 {
     "editor.snippetSuggestions": "top",
     "git.confirmSync": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "terminal.integrated.scrollback": 100000,
     "window.menuBarVisibility": "toggle",
     "editor.fontFamily": "'Droid Sans Mono'",
@@ -12,5 +12,12 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "chat.fontSize": 16,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }

@@ -9,5 +9,6 @@ BASEDIR=$(dirname $(realpath $0))/..
 # Ensure directory is present
 mkdir -p ~/.config/Code/User
 
-# Copy hs
+# Copy settings and keybindings
 cp $BASEDIR/configurations/code/settings.json ~/.config/Code/User/settings.json
+cp $BASEDIR/configurations/code/keybindings.json ~/.config/Code/User/keybindings.json
